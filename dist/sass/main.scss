@@ -55,7 +55,7 @@
     color: $mainColor;
     line-height: 20px;
     span {
-      color: $seconderyColor;
+      color: $thirdColor;
       margin-left: -4px;
     }
     &:hover {
@@ -67,6 +67,10 @@
     font-weight: 700;
     margin-right: 13px;
     font-size: 18px;
+    &:focus,
+    &:focus-visible{
+      color: $thirdColor !important;
+    }
   }
   form {
     position: relative;
@@ -685,7 +689,6 @@
     color: $thirdColor;
     line-height: 20px;
     span {
-      color: $seconderyColor;
       margin-left: -4px;
     }
     &:hover {
@@ -1547,6 +1550,14 @@
       font-size: 14px;
     }
   }
+}
+
+.contact .form_contact_container .form-control{
+  height: 40px;
+  border-radius: 8px !important;
+}
+.contact .form_contact_container textarea.form-control{
+  height: auto;
 }
 .total_content {
   display: flex;

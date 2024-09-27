@@ -7,7 +7,7 @@
       "command": "sass",
       "args": [
         "--watch",
-        "C:/Users/LENOVO/Downloads/WearList-master/WearList-master/dist/sass/main.scss:C:/Users/LENOVO/Downloads/WearList-master/WearList-master/dist/css/main.min.css",
+        "C:/Users/LENOVO/Downloads/WearList-master/ats-task/dist/sass/main.scss:C:/Users/LENOVO/Downloads/WearList-master/ats-task/dist/css/main.min.css",
         "--style=compressed",
         "--no-source-map"
       ],

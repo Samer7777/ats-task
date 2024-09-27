@@ -21,14 +21,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" media="print" onload="this.media='all'" />
 
   <!-- Local CSS files with versioning for cache-busting -->
-  <link rel="stylesheet" href="./dist/css/all.min.css?v=1.0.1" />
-  <link rel="stylesheet" href="./dist/css/fontawesome.min.css?v=1.0.1" />
-  <link rel="stylesheet" href="./dist/css/bootstrap.min.css?v=1.0.1" />
-  <link rel="stylesheet" href="./dist/css/lightslider.min.css?v=1.0.1" />
-  <link href="./dist/animate/animate.min.css?v=1.0.1" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/css/all.min.css?v=1.0.2" />
+  <link rel="stylesheet" href="./dist/css/fontawesome.min.css?v=1.0.2" />
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css?v=1.0.2" />
+  <link rel="stylesheet" href="./dist/css/lightslider.min.css?v=1.0.2" />
+  <link href="./dist/animate/animate.min.css?v=1.0.2" rel="stylesheet" />
 
   <!-- Main CSS with cache-busting -->
-  <link rel="stylesheet" href="./dist/css/main.min.css?v=1.0.1" />
+  <link rel="stylesheet" href="./dist/css/main.min.css?v=1.0.2" />
 
   <title>WearList - The Ultimate Fashion Destination for Clothes</title>
 </head>
@@ -1403,29 +1403,29 @@
   <!--start contact section-->
   <section class="contact" id="contact">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row flex-column-reverse flex-md-row">
         <div class="col-md-5 mb-3 form_contact_container">
           <form>
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="fname">First Name</label>
-                <input type="text" class="form-control form-control-sm" id="fname" name="fname"/>
+                <input type="text" class="form-control form-control-sm" id="fname" name="fname" placeholder="ex: samer"/>
               </div>
               <div class="col-md-6 mb-3">
                 <label for="lname">Last Name</label>
-                <input type="text" class="form-control form-control-sm" id="lname" name="lname"/>
+                <input type="text" class="form-control form-control-sm" id="lname" name="lname" placeholder="ex: majid"/>
               </div>
               <div class="col-md-12 mb-3">
                 <label for="email">Email</label>
-                <input type="email" class="form-control form-control-sm" id="email" name="email"/>
+                <input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="samer@email.com"/>
               </div>
               <div class="col-md-12 mb-3">
                 <label for="subject">Subject</label>
-                <input type="text" class="form-control form-control-sm" id="subject" name="subject"/>
+                <input type="text" class="form-control form-control-sm" id="subject" name="subject" placeholder="ex: i need help"/>
               </div>
               <div class="col-md-12 mb-3">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="8" class="form-control form-control-sm" ></textarea>
+                <textarea name="message" id="message" cols="30" rows="8" class="form-control form-control-sm" placeholder="type your message here..." ></textarea>
               </div>
               <div class="col-12 mb-3">
                 <input type="submit" class="btn submit" value="Send" aria-label="Send">
@@ -1977,7 +1977,7 @@
         var hash = '#' + window.location.hash.substr(1);
         if (hash.length) {
           jQuery('html,body').delay(0).animate({
-            scrollTop: jQuery(hash).offset().top - 300 + 'px'
+            scrollTop: jQuery(hash).offset().top - 40 + 'px'
           }, {
             duration: 1200,
             easing: "easeInOutExpo"
