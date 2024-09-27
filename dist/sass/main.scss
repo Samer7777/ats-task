@@ -256,6 +256,7 @@
       }
       .text {
         padding-left: 115px;
+        min-height: 315px;
         h1 {
           font-size: 2em;
           font-weight: bold;
@@ -323,6 +324,7 @@
 /////////////start product style////////////////
 .product {
   .product_item {
+    min-height: 500px;
     position: relative;
     transition: $transition;
     padding-bottom: 15px;
@@ -1795,6 +1797,12 @@
         width: 100%;
       }
     }
+  }
+  .product .product_item{
+    min-height: 520px;
+  }
+  .hero .hero_carsoel .img_list .text {
+    min-height: 350px;
   }
 }
 /////////////Responsive////////////////
