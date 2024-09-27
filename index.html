@@ -5,29 +5,37 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--fav icon-->
-  <link rel="icon" type="image/png" href="./dist/img/logoIcon1.png" />
 
-  <!--font awesom link-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <link rel="stylesheet" href="./dist/css/all.min.css" />
-  <link rel="stylesheet" href="./dist/css/fontawesome.min.css" />
+  <!-- SEO Meta Tags -->
+  <meta name="title" content="WearList - The Ultimate Fashion Destination for Clothes" />
+  <meta name="description" content="WearList is your one-stop eCommerce platform for trendy clothes, offering a wide variety of fashion for men, women, and kids. Explore our latest collections!" />
+  <meta name="keywords" content="WearList, fashion, clothes, eCommerce, online store, men clothes, women clothes, kids fashion, trendy outfits, fashion accessories" />
+  <meta name="author" content="WearList Team" />
 
-  <!--bootstrap v.5 offline link-->
-  <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
+  <!-- Favicon -->
+  <link rel="preload" href="./dist/img/logoIcon1.png" as="image" />
+  <link rel="icon" type="image/png" href="./dist/img/logoIcon1.png" alt="Wear List Logo" />
 
-  <!--light slider css link-->
-  <link rel="stylesheet" href="./dist/css/lightslider.min.css" />
+  <!-- Font Awesome CDN link with async loading -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" media="print" onload="this.media='all'" />
 
-  <!-- animation -->
-  <link href="./dist/animate/animate.min.css" rel="stylesheet">
+  <!-- Local CSS files with versioning for cache-busting -->
+  <link rel="stylesheet" href="./dist/css/all.min.css?v=1.0.1" />
+  <link rel="stylesheet" href="./dist/css/fontawesome.min.css?v=1.0.1" />
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css?v=1.0.1" />
+  <link rel="stylesheet" href="./dist/css/lightslider.min.css?v=1.0.1" />
+  <link href="./dist/animate/animate.min.css?v=1.0.1" rel="stylesheet" />
 
-  <!--main css-->
-  <link rel="stylesheet" href="./dist/css/main.min.css" />
-  <title>Wear list</title>
+  <!-- Main CSS with cache-busting -->
+  <link rel="stylesheet" href="./dist/css/main.min.css?v=1.0.1" />
+
+  <title>WearList - The Ultimate Fashion Destination for Clothes</title>
 </head>
 
 <body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="sr-only">Skip to main content</a>
   <!--start header-->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top my_nav">
@@ -77,15 +85,15 @@
           </ul>
           <form class="d-flex mx-auto">
             <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-success" type="submit" aria-label="Search">
               <i class="fas fa-search"></i>
             </button>
           </form>
           <div class="header_button d-flex">
-            <a href="#" class="wishles_btn small_btn bg-second">
+            <a href="#" class="wishles_btn small_btn bg-second" aria-label="wishlist">
               <i class="fas fa-heart"></i>
             </a>
-            <button href="#" class="wishles_btn small_btn bg-second" id="show">
+            <button href="#" class="wishles_btn small_btn bg-second" id="show" aria-label="Cart Menu">
               <i class="fas fa-cart-plus"></i>
             </button>
           </div>
@@ -94,6 +102,9 @@
     </nav>
   </header>
   <!--end header-->
+
+  <main>
+
 
   <!--start hero section-->
   <section class="hero" id="hero">
@@ -130,7 +141,7 @@
           </p>
           <div class="d-flex justify-content-center align-items-center my-3 gap-3 d-md-flex d-md-row"
             data-animation="fadeInLeft" data-animation-delay="100">
-            <input type="number" value="1" />
+            <input type="number" value="1" aria-labelledby="number"/>
             <select class="">
               <option>Size</option>
               <option>XL</option>
@@ -153,12 +164,12 @@
             </a>
             <div class="wishels_balance d-flex gap-3">
               <a href="#" class="small_btn bg-second" title="Add To Wishlist" data-animation="fadeInUp"
-                data-animation-delay="200">
+                data-animation-delay="200" aria-label="Wishlist">
                 <i class="fas fa-heart"></i>
               </a>
               <a href="#" class="small_btn bg-second" title="Compire" data-animation="fadeInUp"
                 data-animation-delay="300" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                data-item="Single Product">
+                data-item="Single Product" aria-label="show Product">
                 <i class="fas fa-eye"></i>
               </a>
             </div>
@@ -332,8 +343,8 @@
           </div>
           <div class="filter_search">
             <form action="" onsubmit="return false">
-              <input type="search" class="form-control form-control-sm" placeholder="Search.." id="search" />
-              <button type="submit"><i class="fas fa-search"></i></button>
+              <input type="search" class="form-control form-control-sm" placeholder="Search.." id="search" aria-label="Search"/>
+              <button type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
             </form>
           </div>
         </div>
@@ -1398,26 +1409,26 @@
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="fname">First Name</label>
-                <input type="text" class="form-control form-control-sm" />
+                <input type="text" class="form-control form-control-sm" id="fname" name="fname"/>
               </div>
               <div class="col-md-6 mb-3">
                 <label for="lname">Last Name</label>
-                <input type="text" class="form-control form-control-sm" />
+                <input type="text" class="form-control form-control-sm" id="lname" name="lname"/>
               </div>
               <div class="col-md-12 mb-3">
                 <label for="email">Email</label>
-                <input type="email" class="form-control form-control-sm" />
+                <input type="email" class="form-control form-control-sm" id="email" name="email"/>
               </div>
               <div class="col-md-12 mb-3">
                 <label for="subject">Subject</label>
-                <input type="text" class="form-control form-control-sm" />
+                <input type="text" class="form-control form-control-sm" id="subject" name="subject"/>
               </div>
               <div class="col-md-12 mb-3">
                 <label for="message">Message</label>
-                <textarea name="" id="" cols="30" rows="8" class="form-control form-control-sm"></textarea>
+                <textarea name="message" id="message" cols="30" rows="8" class="form-control form-control-sm" ></textarea>
               </div>
               <div class="col-12 mb-3">
-                <input type="submit" class="btn submit" value="Send">
+                <input type="submit" class="btn submit" value="Send" aria-label="Send">
               </div>
             </div>
           </form>
@@ -1570,6 +1581,7 @@
   </section>
   <!--end instgram follow  section-->
 
+</main>
   <!--end footer  section-->
   <footer class="footer py-5">
     <div class="container-fluid">
@@ -1747,7 +1759,7 @@
               <h6 class="fw-bold main_color">T-Shirt</h6>
             </div>
             <div class="col-md-3 mb-3">
-              <input type="number" class="form-control form-control-sm w-50" value="1" />
+              <input type="number" class="form-control form-control-sm w-50" value="1" aria-labelledby="number"/>
             </div>
             <div class="col-md-3 mb-3">
               <button class="btn btn-danger">Remove</button>
@@ -1763,7 +1775,7 @@
               <h6 class="fw-bold main_color">Shoes</h6>
             </div>
             <div class="col-md-3 mb-3">
-              <input type="number" class="form-control form-control-sm w-50" value="1" />
+              <input type="number" class="form-control form-control-sm w-50" value="1" aria-label="number"/>
             </div>
             <div class="col-md-3 mb-3">
               <button class="btn btn-danger">Remove</button>
@@ -1779,7 +1791,7 @@
               <h6 class="fw-bold main_color">Shirt</h6>
             </div>
             <div class="col-md-3 mb-3">
-              <input type="number" class="form-control form-control-sm w-50" value="1" />
+              <input type="number" class="form-control form-control-sm w-50" value="1" aria-label="number"/>
             </div>
             <div class="col-md-3 mb-3">
               <button class="btn btn-danger">Remove</button>
@@ -1795,7 +1807,7 @@
               <h6 class="fw-bold main_color">Shirt</h6>
             </div>
             <div class="col-md-3 mb-3">
-              <input type="number" class="form-control form-control-sm w-50" value="1" />
+              <input type="number" class="form-control form-control-sm w-50" value="1" aria-label="number"/>
             </div>
             <div class="col-md-3 mb-3">
               <button class="btn btn-danger">Remove</button>
@@ -1811,7 +1823,7 @@
               <h6 class="fw-bold main_color">Shirt</h6>
             </div>
             <div class="col-md-3 mb-3">
-              <input type="number" class="form-control form-control-sm w-50" value="1" />
+              <input type="number" class="form-control form-control-sm w-50" value="1" aria-label="number"/>
             </div>
             <div class="col-md-3 mb-3">
               <button class="btn btn-danger">Remove</button>
@@ -1885,7 +1897,7 @@
                 </p>
                 <div class="d-flex  my-3 gap-3 d-md-flex d-md-row" data-animation="fadeInLeft"
                   data-animation-delay="100">
-                  <input type="number" value="1" />
+                  <input type="number" value="1" aria-label="number"/>
                   <select class="">
                     <option>Size</option>
                     <option>XL</option>
