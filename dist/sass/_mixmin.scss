@@ -1,0 +1,61 @@
+//centered mixin
+@mixin centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//small button mixmin
+@mixin smallButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  @include centered;
+}
+
+//main button mixin
+@mixin mainButton {
+  background-color: $thirdColor;
+  color: $mainColor;
+  font-size: 17px;
+  padding: 15px 25px;
+  border-radius: 24px;
+  font-weight: 700;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+//secondery in button mixin
+@mixin seconderyButton {
+  background-color: transparent;
+  color: $seconderyColor;
+  border: 1px solid $seconderyColor;
+  font-size: 17px;
+  padding: 0 20px;
+  border-radius: 24px;
+  font-weight: 700;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+//color classe
+$color_classes: "main" $mainColor, "second" $seconderyColor,
+  "third" $thirdColor "black" $black;
+@each $class, $color in $color_classes {
+  .#{$class}_color {
+    color: $color;
+  }
+}
+//background color classe
+$color_classes: "main" $mainColor $white, "second" $thirdColor $mainColor,
+  "third" $seconderyColor $white "four" $black $white;
+@each $class, $bg, $color in $color_classes {
+  .bg-#{$class} {
+    background-color: $bg;
+    color: $color;
+  }
+}

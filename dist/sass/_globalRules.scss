@@ -1,0 +1,87 @@
+//import virable
+@import "./variables";
+//import mixin
+@import "./mixmin";
+//import google fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+::selection{
+  background-color: $mainColor;
+  color: $white;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  caret-color: $thirdColor;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+  }
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.btn:focus {
+  box-shadow: none;
+  border: none;
+}
+input:focus,
+.form-control:focus {
+  box-shadow: none !important;
+}
+.form-control:focus {
+  border-color: #1b464063;
+}
+.form-control::placeholder {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.animated {
+  visibility: hidden;
+  -webkit-animation-duration: .65s;
+  animation-duration: .65s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.visible {
+  visibility: visible;
+}
+
+.main_btn.hoverd:hover{
+  background: $mainColor;
+  color: $thirdColor;
+}
+.dropdown-item.active, .dropdown-item:active{
+  background: transparent;
+}
+@media (max-width: 991px) {
+  .animated, .animated .animated, .animated .fa, .animated .animated .fa {
+    visibility: visible;
+    -webkit-animation-name: animation-off;
+    animation-name: animation-off;
+  }
+}

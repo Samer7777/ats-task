@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sass Watch",
+      "type": "shell",
+      "command": "sass",
+      "args": [
+        "--watch",
+        "C:/Users/LENOVO/Downloads/WearList-master/WearList-master/dist/sass/main.scss:C:/Users/LENOVO/Downloads/WearList-master/WearList-master/dist/css/main.min.css",
+        "--style=compressed",
+        "--no-source-map"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
