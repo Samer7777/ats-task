@@ -85,3 +85,96 @@ input:focus,
     animation-name: animation-off;
   }
 }
+
+/* 1.2 - Preloader
+/* ========================================================================== */
+
+#preloader {
+  position: fixed;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  background-color: #ffffff;
+  z-index: 999999;
+}
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url("../img/logoIcon2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+  margin: -100px 0 0 -100px;
+  text-align: center;
+  font-size: 50px;
+}
+#preloader-title {
+  margin-top: 47px;
+}
+.spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  font-size: 100px;
+  width: 2em;
+  height: 2em;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: inset 0 0 0 .12em rgba(0,0,0,0.2);
+  background:-webkit-linear-gradient($mainColor 50%, $thirdColor 50%), -webkit-linear-gradient($thirdColor 50%, $mainColor 50%);
+  background:-webkit-linear-gradient($mainColor 50%, $thirdColor 50%), -webkit-linear-gradient($thirdColor 50%, $mainColor 50%);
+  background:linear-gradient($mainColor 50%, $thirdColor 50%), linear-gradient($thirdColor 50%, $mainColor 50%);
+  background-size: 50% 100%, 50% 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+  -webkit-animation: mask 3s infinite alternate;
+  animation: mask 3s infinite alternate;
+}
+.spinner:after {
+  content: '';
+  position: absolute;
+  border: .90em solid rgba(255,255,255,1);
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border-radius: inherit;
+}
+@-webkit-keyframes mask {
+  0% { }
+  25%  { -webkit-transform: rotate(270deg); }
+  50%  { -webkit-transform: rotate( 90deg); }
+  75%  { -webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(180deg); }
+}
+@keyframes mask {
+  0% { }
+  25%  { -webkit-transform: rotate(270deg); transform: rotate(270deg); }
+  50%  { -webkit-transform: rotate( 90deg); transform: rotate( 90deg); }
+  75%  { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+}
+
+.mainImageContainer{
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+#MainImg {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions for transform and opacity */
+  opacity: 1; /* Initial opacity */
+  position: relative; /* Position relative for absolute positioning of slide */
+}
+
+.slide-out {
+  transform: translateX(-100%); /* Slide out to the left */
+  opacity: 0; /* Fade out */
+}
+
+.slide-in {
+  transform: translateX(0); /* Slide in to original position */
+  opacity: 1; /* Fade in */
+}

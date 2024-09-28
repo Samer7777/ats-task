@@ -25,11 +25,34 @@ var demo = function () {
         if (navbarCollapse.hasClass('show')) {
           navbarCollapse.collapse('hide');
         }
+        // Collapse the navbar if it's expanded
+        var navbarCollapse = $('.dropdown-menu');
+        if (navbarCollapse.hasClass('show')) {
+          navbarCollapse.removeClass('show');
+          $(".dropdown-toggle").attr('aria-expanded', 'false'); // Correctly set the aria-expanded attribute
+          $(".dropdown-toggle").removeClass('show'); // Correctly set the aria-expanded attribute
+        }
+
 
         return false;
       }
     });
   }
+
+  // preloader
+  // ---------------------------------------------------------------------------------------
+  // Hide the content initially when the document is ready
+  $(document).ready(function () {
+    $('#content').hide(); // Hide content initially
+  });
+
+  $(window).on('load', function () {
+    $('#status').fadeOut(); // Fade out the loader status
+    $('#preloader').delay(200).fadeOut(100, function () {
+      $('#content').fadeIn(); // Fade in the content after preloader is hidden
+    });
+  });
+
 
   // INIT FUNCTIONS
   // ---------------------------------------------------------------------------------------

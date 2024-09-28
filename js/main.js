@@ -86,22 +86,33 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-/// single product image
+// Single product image
 var MainImg = document.getElementById("MainImg");
 var smallImg = document.getElementsByClassName("small-img");
 
-smallImg[0].onclick = function () {
-  MainImg.src = smallImg[0].src;
-};
-smallImg[1].onclick = function () {
-  MainImg.src = smallImg[1].src;
-};
-smallImg[2].onclick = function () {
-  MainImg.src = smallImg[2].src;
-};
-smallImg[3].onclick = function () {
-  MainImg.src = smallImg[3].src;
-};
+// Function to change the main image with a slide and fade effect
+function changeImage(img) {
+    // Start the slide-out effect
+    MainImg.classList.remove("slide-in");
+    MainImg.classList.add("slide-out");
+
+    // Wait for the slide-out transition to complete
+    setTimeout(function () {
+        MainImg.src = img.src; // Change the main image source
+        // Start the slide-in effect
+        MainImg.classList.remove("slide-out");
+        MainImg.classList.add("slide-in");
+    }, 300); // Match this time to the duration of the slide-out effect
+}
+
+// Assign click events to small images
+for (let i = 0; i < smallImg.length; i++) {
+    smallImg[i].onclick = function () {
+        changeImage(smallImg[i]);
+    };
+}
+
+
 
 
 

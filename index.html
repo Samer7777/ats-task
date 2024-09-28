@@ -35,22 +35,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" media="print" onload="this.media='all'" />
 
   <!-- Local CSS files with versioning for cache-busting -->
-  <link rel="stylesheet" href="./dist/css/all.min.css?v=1.0.4" />
-  <link rel="stylesheet" href="./dist/css/fontawesome.min.css?v=1.0.4" />
-  <link rel="stylesheet" href="./dist/css/bootstrap.min.css?v=1.0.4" />
-  <link rel="stylesheet" href="./dist/css/lightslider.min.css?v=1.0.4" />
-  <link href="./dist/animate/animate.min.css?v=1.0.4" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/css/all.min.css?v=1.0.5" />
+  <link rel="stylesheet" href="./dist/css/fontawesome.min.css?v=1.0.5" />
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css?v=1.0.5" />
+  <link rel="stylesheet" href="./dist/css/lightslider.min.css?v=1.0.5" />
+  <link href="./dist/animate/animate.min.css?v=1.0.5" rel="stylesheet" />
 
   <!-- Main CSS with cache-busting -->
-  <link rel="preload" href="./dist/css/main.min.css?v=1.0.4" as="style"  onload="this.rel='stylesheet'"/>
+  <link rel="preload" href="./dist/css/main.min.css?v=1.0.5" as="style"  onload="this.rel='stylesheet'"/>
 
   <title>WearList - The Ultimate Fashion Destination for Clothes</title>
 </head>
 
 
 <body>
+
+
+
   <!-- Skip to main content for accessibility -->
   <a href="#main-content" class="sr-only">Skip to main content</a>
+
+    <!-- Preloader -->
+<div id="preloader">
+  <div id="status">
+      <div class="spinner"></div>
+  </div>
+</div>
   <!--start header-->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top my_nav">
@@ -1082,7 +1092,7 @@
   <section class="banner mb-5" id="offer">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4 mb-5">
+        <div class="col-md-4 mb-5" data-animation="fadeInLeft" data-animation-delay="500">
           <h3 class="main_color mb-2">Best Offers for Customers</h3>
           <p class="text-muted">
             Shop our selection of vape carts, available in a range of strains,
@@ -1207,8 +1217,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center heading mb-3">
-          <h1>Customer Testimonial</h1>
-          <p class="text-muted">
+          <h1 data-animation="fadeInUp" data-animation-delay="100">Customer Testimonial</h1>
+          <p class="text-muted" data-animation="fadeInUp" data-animation-delay="200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
             accusamus porro maiores.
           </p>
@@ -1418,8 +1428,8 @@
   <section class="contact" id="contact">
     <div class="container-fluid">
       <div class="row flex-column-reverse flex-md-row">
-        <div class="col-md-5 mb-3 form_contact_container">
-          <form>
+        <div class="col-md-5 mb-3 form_contact_container" data-animation="fadeInLeft" data-animation-delay="500">
+          <form >
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="fname">First Name</label>
@@ -1447,7 +1457,7 @@
             </div>
           </form>
         </div>
-        <div class="col-md-7 mb-3 form_contact_text">
+        <div class="col-md-7 mb-3 form_contact_text" data-animation="fadeInLeft" data-animation-delay="300">
           <h1 class="fw-bold main_color">How can We help ?</h1>
           <p class="text-muted mb-5">
             Please select a topic below related to your inquiry . if you dont
@@ -1866,7 +1876,7 @@
           <!--start main_banner section-->
           <section class="container s-product mb-2">
             <div class="row">
-              <div class="col-lg-5 col-md-12 col-12">
+              <div class="col-lg-5 col-md-12 col-12 mainImageContainer px-0">
                 <img  data-src="./dist/img/img/products/f1.jpg" alt="Main Product" class="img-fluid w-100 pb-1 lazy" id="MainImg"/>
                 <div class="small-im-group">
                   <div class="small-img-col">
@@ -1953,25 +1963,22 @@
   </div>
 
 
-  <!--jquery link-->
-  <script src="./js/jquery-3.6.0.min.js"></script>
-  <script src="./js/jquery-2.1.1.min.js"></script>
-  <script src="./js/jquery.smoothscroll.min.js"></script>
-  <script src="./js/waypoints.min.js"></script>
-  <script src="./js/jquery.easing.min.js"></script>
-  <!--bootstrap v.5 js link-->
-  <script src="./js/bootstrap.min.js"></script>
+<!-- jQuery link -->
+<script src="./js/jquery-3.6.0.min.js?v=1.0.5"></script>
+<script src="./js/jquery-2.1.1.min.js?v=1.0.5"></script>
+<script src="./js/jquery.smoothscroll.min.js?v=1.0.5"></script>
+<script src="./js/waypoints.min.js?v=1.0.5"></script>
+<script src="./js/jquery.easing.min.js?v=1.0.5"></script>
 
-  <!--light slider js-->
-  <script src="./js/lightslider.min.js"></script>
+<!-- Bootstrap v.5 JS link -->
+<script src="./js/bootstrap.min.js?v=1.0.5"></script>
 
+<!-- Light slider JS -->
+<script src="./js/lightslider.min.js?v=1.0.5"></script>
 
-
-
-  <!--Main js-->
-  <script src="./js/main.js"></script>
-  <!--Main js-->
-  <script src="./js/demo.js"></script>
+<!-- Main JS -->
+<script src="./js/main.js?v=1.0.5"></script>
+<script src="./js/demo.js?v=1.0.5"></script>
 
 
   <script type="text/javascript">

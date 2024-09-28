@@ -917,8 +917,11 @@
     background-color: #f7f7f7;
   }
   #MainImg {
-    background-color: #f9f9f9;
+    // background-color: #f9f9f9;
     margin-bottom: 4px;
+  }
+  .small-img {
+    outline: 10px solid #fff;
   }
   select {
     cursor: pointer;
@@ -1803,6 +1806,12 @@
   }
   .hero .hero_carsoel .img_list .text {
     min-height: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero .hero_carsoel{
+    min-height: 100vh;
   }
 }
 /////////////Responsive////////////////
