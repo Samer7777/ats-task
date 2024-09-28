@@ -305,15 +305,17 @@
         background-color: transparent;
         font-size: 20px;
         font-weight: 800;
-        color: $textColor;
+        color: $white;
         border: none;
         padding: 0;
         margin: 6px 0;
         width: max-content;
         transition: $transition;
+        border-bottom: 1px solid transparent;
         &.active {
           color: $white;
           transform: scale(1.5);
+          border-color: $white;
         }
       }
     }
@@ -633,7 +635,7 @@
   .footer_content {
     .icon {
       a:hover {
-        color: $seconderyColor;
+        color: $white
       }
     }
     .list,
@@ -688,7 +690,7 @@
     font-weight: 900;
     letter-spacing: -1px;
     font-size: 28px;
-    color: $thirdColor;
+    color: $mainColor;
     line-height: 20px;
     span {
       margin-left: -4px;
@@ -1812,6 +1814,10 @@
 @media (max-width: 400px) {
   .hero .hero_carsoel{
     min-height: 100vh;
+  }
+  #products {
+    height: 100vh;
+    overflow-y: auto;
   }
 }
 /////////////Responsive////////////////

@@ -35,14 +35,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" media="print" onload="this.media='all'" />
 
   <!-- Local CSS files with versioning for cache-busting -->
-  <link rel="stylesheet" href="./dist/css/all.min.css?v=1.0.5" />
-  <link rel="stylesheet" href="./dist/css/fontawesome.min.css?v=1.0.5" />
-  <link rel="stylesheet" href="./dist/css/bootstrap.min.css?v=1.0.5" />
-  <link rel="stylesheet" href="./dist/css/lightslider.min.css?v=1.0.5" />
-  <link href="./dist/animate/animate.min.css?v=1.0.5" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/css/all.min.css?v=1.0.6" />
+  <link rel="stylesheet" href="./dist/css/fontawesome.min.css?v=1.0.6" />
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css?v=1.0.6" />
+  <link rel="stylesheet" href="./dist/css/lightslider.min.css?v=1.0.6" />
+  <link href="./dist/animate/animate.min.css?v=1.0.6" rel="stylesheet" />
 
   <!-- Main CSS with cache-busting -->
-  <link rel="preload" href="./dist/css/main.min.css?v=1.0.5" as="style"  onload="this.rel='stylesheet'"/>
+  <link rel="preload" href="./dist/css/main.min.css?v=1.0.6" as="style"  onload="this.rel='stylesheet'"/>
 
   <title>WearList - The Ultimate Fashion Destination for Clothes</title>
 </head>
@@ -67,7 +67,7 @@
       <div class="container-fluid">
         <div class="smooth">
           <a class="navbar-brand" href="#hero">
-            <img  data-src="./dist/img/logoIcon2.png" alt="Logo" class="lazy logo" />
+            <img  data-src="./dist/img/logoIcon2.webp" alt="Logo" class="lazy logo" />
             Wear <span>list</span>
           </a>
         </div>
@@ -168,15 +168,15 @@
           </p>
           <div class="d-flex justify-content-center align-items-center my-3 gap-3 d-md-flex d-md-row"
             data-animation="fadeInLeft" data-animation-delay="100">
-            <input type="number" value="1" aria-labelledby="number"/>
-            <select class="">
+            <input type="number" value="1" aria-label="Quantity" title="Quantity"/>
+            <select class="" aria-label="Size">
               <option>Size</option>
               <option>XL</option>
               <option>XXL</option>
               <option>Small</option>
               <option>Large</option>
             </select>
-            <select class="">
+            <select class="" aria-label="Color">
               <option>Color</option>
               <option>Red</option>
               <option>Black</option>
@@ -400,11 +400,11 @@
                   <span class="main_color fw-bold">$7.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="" class="small_btn">
+                  <a href="" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -438,11 +438,11 @@
                   <span class="main_color fw-bold">$5.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="#" class="small_btn">
+                  <a href="#" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -477,11 +477,11 @@
                   <span class="main_color fw-bold">$4.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="#" class="small_btn">
+                  <a href="#" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -518,11 +518,11 @@
                   <span class="main_color fw-bold">$7.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="" class="small_btn">
+                  <a href="" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -558,11 +558,11 @@
                   <span class="main_color fw-bold">$7.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="#" class="small_btn">
+                  <a href="#" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -597,11 +597,11 @@
                   <span class="main_color fw-bold">$5.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="#" class="small_btn">
+                  <a href="#" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -638,11 +638,11 @@
                   <span class="main_color fw-bold">$7.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="" class="small_btn">
+                  <a href="" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -678,11 +678,11 @@
                   <span class="main_color fw-bold">$4.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="#" class="small_btn">
+                  <a href="#" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -719,11 +719,11 @@
                   <span class="main_color fw-bold">$7.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="" class="small_btn">
+                  <a href="" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -760,11 +760,11 @@
                   <span class="main_color fw-bold">$7.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="" class="small_btn">
+                  <a href="" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -800,11 +800,11 @@
                   <span class="main_color fw-bold">$5.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="#" class="small_btn">
+                  <a href="#" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -841,11 +841,11 @@
                   <span class="main_color fw-bold">$7.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="" class="small_btn">
+                  <a href="" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -882,11 +882,11 @@
                   <span class="main_color fw-bold">$7.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="" class="small_btn">
+                  <a href="" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -923,11 +923,11 @@
                   <span class="main_color fw-bold">$7.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="" class="small_btn">
+                  <a href="" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -963,11 +963,11 @@
                   <span class="main_color fw-bold">$5.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="#" class="small_btn">
+                  <a href="#" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -1003,11 +1003,11 @@
                   <span class="main_color fw-bold">$4.99</span>
                 </div>
                 <div class="wishels_balance">
-                  <a href="#" class="small_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  <a href="#" class="small_btn" aria-label="Show" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-item="Single Product">
                     <i class="fas fa-eye"></i>
                   </a>
-                  <a href="#" class="small_btn">
+                  <a href="#" class="small_btn" aria-label="Show">
                     <i class="fas fa-heart"></i>
                   </a>
                 </div>
@@ -1229,19 +1229,19 @@
         <div class="col-12 mb-3">
           <div class="list-group d-flex flex-row" id="list-tab" role="tablist">
             <a class="list-group-item list-group-item-action" id="list-Testimonial1-list" data-bs-toggle="list"
-              href="#list-Testimonial1" role="tab" aria-controls="list-Testimonial1" aria-selected="false"><img
+              href="#list-Testimonial1" role="tab" aria-controls="list-Testimonial1" aria-selected="false" aria-label="Testimonial Person"><img
                 src="./dist/img/review/review2.jpg" class="img-fluid" alt="" /></a>
             <a class="list-group-item list-group-item-action" id="list-Testimonial2-list" data-bs-toggle="list"
-              href="#list-Testimonial2" role="tab" aria-controls="list-Testimonial2" aria-selected="false"><img
+              href="#list-Testimonial2" role="tab" aria-controls="list-Testimonial2" aria-selected="false" aria-label="Testimonial Person"><img
                 src="./dist/img/review/review3.jpg" class="img-fluid" alt="" /></a>
             <a class="list-group-item list-group-item-action active" id="list-Testimonial3-list" data-bs-toggle="list"
               href="#list-Testimonial3" role="tab" aria-controls="list-Testimonial3" aria-selected="true"><img
                 src="./dist/img/review/review4.jpg" class="img-fluid" alt="" /></a>
             <a class="list-group-item list-group-item-action" id="list-Testimonial4-list" data-bs-toggle="list"
-              href="#list-Testimonial4" role="tab" aria-controls="list-Testimonial4" aria-selected="false"><img
+              href="#list-Testimonial4" role="tab" aria-controls="list-Testimonial4" aria-selected="false" aria-label="Testimonial Person"><img
                 src="./dist/img/review/review5.jpeg" class="img-fluid" alt="" /></a>
             <a class="list-group-item list-group-item-action" id="list-Testimonial5-list" data-bs-toggle="list"
-              href="#list-Testimonial5" role="tab" aria-controls="list-Testimonial5" aria-selected="false"><img
+              href="#list-Testimonial5" role="tab" aria-controls="list-Testimonial5" aria-selected="false" aria-label="Testimonial Person"><img
                 src="./dist/img/review/review6.jpeg" class="img-fluid" alt="" /></a>
           </div>
         </div>
@@ -1623,16 +1623,16 @@
             </p>
             <ul class="icon d-flex flex-wrap">
               <li>
-                <a href="#" class="me-3 third_color h4"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="me-3 third_color h4" aria-label="Instgram"><i class="fab fa-instagram"></i></a>
               </li>
               <li>
-                <a href="#" class="me-3 third_color h4"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="me-3 third_color h4" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li>
-                <a href="#" class="me-3 third_color h4"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="me-3 third_color h4" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
               </li>
               <li>
-                <a href="#" class="me-3 third_color h4"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="me-3 third_color h4" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
               </li>
             </ul>
           </aside>
@@ -1646,8 +1646,8 @@
                   <i class="fas fa-phone-alt"></i>
                 </span>
                 <span class="d-flex flex-column">
-                  <a href="#">+962-79-55-969</a>
-                  <a href="#">+962-79-55-969</a></span>
+                  <a href="#">+ 962 - 79 - 55 - 969</a>
+                  <a href="#">+ 962 - 79 -55 - 969</a></span>
               </li>
               <li class="d-flex mb-3">
                 <span class="me-3 my-auto small_btn bg-second">
@@ -1922,14 +1922,14 @@
                 <div class="d-flex  my-3 gap-3 d-md-flex d-md-row" data-animation="fadeInLeft"
                   data-animation-delay="100">
                   <input type="number" value="1" aria-label="number"/>
-                  <select class="">
+                  <select class="" aria-label="Size">
                     <option>Size</option>
                     <option>XL</option>
                     <option>XXL</option>
                     <option>Small</option>
                     <option>Large</option>
                   </select>
-                  <select class="">
+                  <select class="" aria-label="Color">
                     <option>Color</option>
                     <option>Red</option>
                     <option>Black</option>
@@ -1964,22 +1964,21 @@
 
 
 <!-- jQuery link -->
-<script src="./js/jquery-3.6.0.min.js?v=1.0.5"></script>
-<script src="./js/jquery-2.1.1.min.js?v=1.0.5"></script>
-<script src="./js/jquery.smoothscroll.min.js?v=1.0.5"></script>
-<script src="./js/waypoints.min.js?v=1.0.5"></script>
-<script src="./js/jquery.easing.min.js?v=1.0.5"></script>
+<script src="./js/jquery-3.6.0.min.js?v=1.0.6"></script>
+<script src="./js/jquery-2.1.1.min.js?v=1.0.6"></script>
+<script src="./js/jquery.smoothscroll.min.js?v=1.0.6"></script>
+<script src="./js/waypoints.min.js?v=1.0.6"></script>
+<script src="./js/jquery.easing.min.js?v=1.0.6"></script>
 
 <!-- Bootstrap v.5 JS link -->
-<script src="./js/bootstrap.min.js?v=1.0.5"></script>
+<script src="./js/bootstrap.min.js?v=1.0.6"></script>
 
 <!-- Light slider JS -->
-<script src="./js/lightslider.min.js?v=1.0.5"></script>
+<script src="./js/lightslider.min.js?v=1.0.6"></script>
 
 <!-- Main JS -->
-<script src="./js/main.js?v=1.0.5"></script>
-<script src="./js/demo.js?v=1.0.5"></script>
-
+<script src="./js/main.js?v=1.0.6"></script>
+<script src="./js/demo.js?v=1.0.6"></script>
 
   <script type="text/javascript">
     jQuery(document).ready(function () {
