@@ -1771,6 +1771,9 @@
       object-fit: cover;
     }
   }
+  .filter .filter_button{
+    display: flex;
+  }
 }
 
 @media (max-width: 420px) {
