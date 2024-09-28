@@ -1773,13 +1773,19 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .hero .hero_carsoel{
     min-height: 100vh;
   }
   #products {
     height: 100vh;
     overflow-y: auto;
+  }
+  .hero .hero_carsoel .img_list img{
+    min-height: 200px;
+  }
+  .tab-pane {
+    height: 100%;
   }
 }
 /////////////Responsive////////////////
