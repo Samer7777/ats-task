@@ -22,7 +22,13 @@ html{
 body {
   font-family: "Montserrat", sans-serif;
   caret-color: $thirdColor;
+  font-display: swap; /* أو block أو fallback حسب الحاجة */
 }
+img {
+  width: 100%; /* or max-width: 100%; */
+  height: auto;
+}
+
 h1,
 h2,
 h3,
