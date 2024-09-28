@@ -185,3 +185,25 @@ input:focus,
   opacity: 1; /* Fade in */
 }
 
+.form-control::placeholder{
+  color: #000;
+}
+
+.text-muted{
+  color: #000 !important;
+}
+
+#skip a {
+  display: block;
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  }
+
+#skip a:focus {
+  left: 0;
+  top: 0;
+  padding: 3px;
+  background: #ffc;
+  border:1px solid #990000;
+  }
