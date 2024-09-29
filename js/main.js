@@ -6,11 +6,11 @@ $(document).ready(function () {
     autoWidth: false,
     slideMove: 1, // slidemove will be 1 if loop is true
     slideMargin: 0,
-    loop: true,
-    easing: "cubic-bezier(0.25, 0, 0.25, 1)",
+    // loop: true,
+    // easing: "cubic-bezier(0.25, 0, 0.25, 1)",
     speed: 900,
     pager: false,
-    control: true,
+    control: false,
     responsive: [
       {
         breakpoint: 800,
