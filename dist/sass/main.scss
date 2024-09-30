@@ -1547,6 +1547,175 @@
   }
 }
 //////////////////////////////End cart page style//////////////////////////////////
+///
+//////////////////////////////New Hero style//////////////////////////////////
+.hero.new{
+  min-height: 100vh;
+  position: relative;
+  background-color: #f5f5f5;
+  padding-top: 30px;
+  .buy-btn{
+    border-radius: 4px;
+    &:hover{
+      background-color: $thirdColor;
+    }
+  }
+  #playSlider{
+    font-size: 20px;
+    font-weight: 500;
+    i{
+      font-size: 25px;
+    }
+  }
+  .heroContainer{
+    max-width: 90%;
+    margin: auto;
+  }
+  .mainImageContainer{
+    background-color: #f5f5f5;
+    border: 15px solid #fff;
+    margin-bottom: -10px;
+  }
+  .bottomContainer {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    min-height: 140px;
+  }
+  .small-im-group {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: #ffff;
+    padding: 0;
+  }
+  .mainImageContainer{
+    display: flex;
+  }
+  .small-img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  .sizeCheck{
+    display: flex;
+    gap: 10px;
+  }
+
+  .sizeLable{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #eee;
+    color: $mainColor;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    border: none;
+    border: 3px solid transparent;
+    display: grid;
+    place-items: center;
+  }
+
+  .sizeLable.active{
+    background-color: $mainColor !important;
+    color: $thirdColor !important;
+    border-color: $thirdColor;
+  }
+  .colors{
+    gap: 20px;
+    .active{
+      border-color: $mainColor;
+    }
+    .color1{
+      background: $thirdColor !important;
+      &:focus,
+      &:focus-visible{
+        border-color: $mainColor;
+      }
+    }
+    .color2{
+      background: $black !important;
+      &:focus,
+      &:focus-visible{
+        border-color: $thirdColor;
+      }
+    }
+    .color3{
+      background: red !important;
+      &:focus,
+      &:focus-visible{
+        border-color: $mainColor;
+      }
+    }
+    .color4{
+      background: #007fb6 !important;
+      &:focus,
+      &:focus-visible{
+        border-color: $mainColor;
+      }
+    }
+  }
+  .form-check-input{
+    width: 0;
+    height: 0;
+  }
+  .text{
+    h3,h4{
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      color: $textColor;
+      text-transform: uppercase;
+    }
+  }
+}
+@media (max-width: 676px) {
+  .new {
+    .col-lg-4.col-md-12.col-12.ps-5.text {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-content: center;
+      padding: 25px !important;
+    }
+  }
+  .hero.new {
+      .col-12.s-product.py-3.pb-5.mb-5 {
+        margin-bottom: 0 !important;
+      }
+  }
+  .hero.new .bottomContainer{
+    max-width: 100%;
+    padding: 20px;
+  }
+  .hero.new #playSlider i {
+    font-size: 16px;
+  }
+  .hero.new .small_btn {
+    width: 35px;
+    height: 35px;
+  }
+  .hero.new #playSlider {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .hero.new .buy-btn {
+    font-size: 12px;
+  }
+}
+//////////////////////////////New Hero style//////////////////////////////////
 
 /////////////Responsive////////////////
 @media (max-width: 1280px) and (min-width: 991px) {
